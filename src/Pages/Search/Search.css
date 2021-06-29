@@ -1,0 +1,5 @@
+.search {
+  display: flex;
+  margin: 15px 0;
+  box-shadow: 0 6px 20px rgba(19, 101, 255, 0.17);
+}

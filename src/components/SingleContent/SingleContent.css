@@ -1,0 +1,67 @@
+.media {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 5px;
+  margin: 5px 0;
+  background-color: #354c6b;
+  border-radius: 10px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  /* transition: all 0.1s linear; */
+  box-shadow: 0 6px 20px rgba(19, 101, 255, 0.17);
+}
+
+.media:hover {
+  background-color: #537895;
+}
+
+@media (max-width: 550px) {
+  .media {
+    width: 46%;
+  }
+}
+
+.poster {
+  border-radius: 10px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  padding: 8px 0;
+  font-weight: bolder;
+}
+
+.subTitle {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3px;
+  padding: 0 2px;
+  padding-bottom: 3px;
+  font-weight: bold;
+}
+.cart-btn {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 360px;
+  cursor: pointer;
+}
+.cart-btn1 {
+  color: white;
+  position: absolute;
+  right: 50px;
+  top: 360px;
+  cursor: pointer;
+}
+.cart-btn:hover {
+  color: blue;
+  transform: scale(1.1);
+}
+.cart-btn1:hover {
+  color: red;
+  transform: scale(1.1);
+}
