@@ -10,6 +10,7 @@ import Series from "./Pages/Series/Series";
 import Favorite from "./Pages/Favorite/Favorite";
 import Search from "./Pages/Search/Search";
 import { Cart } from "./Pages/Cart/Cart";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           </Switch>
         </Container>
       </div>
+      <Footer />
       <SimpleBottomNavigation />
     </BrowserRouter>
   );
