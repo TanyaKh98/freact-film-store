@@ -1,0 +1,51 @@
+.card {
+  margin-top: 50px;
+  border-radius: 20px;
+  background-color: #354c6b;
+  box-shadow: 0 6px 20px rgba(19, 101, 255, 0.17);
+}
+.card-body {
+  align-items: center;
+  height: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  margin: 20px 0 0;
+}
+.form {
+  width: 400px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card-signup {
+  height: 400px;
+}
+.form-control {
+  height: 30px;
+}
+.label {
+  padding-bottom: 10px;
+}
+.btn4 {
+  width: 100%;
+  height: 28px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border-style: none;
+  color: white;
+  background-color: #023374;
+}
+
+.btn4:hover {
+  transform: scale(1.01);
+  background-color: rgb(68, 165, 255);
+}
+
+.w-100 {
+  text-align: center;
+  color: white;
+}

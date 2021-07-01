@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import "./Trending.css";
 import SingleContent from "../../components/SingleContent/SingleContent";
 import CustomPagination from "../../components/Pagination/CustomPagination";
+import Banner from "../../components/Banner/Banner";
 
 const Trending = () => {
   const [page, setPage] = useState(1);
@@ -25,6 +26,7 @@ const Trending = () => {
 
   return (
     <div>
+      <Banner />
       <span className="pageTitle">Trending Today</span>
       <div className="trending">
         {content &&
@@ -44,5 +46,4 @@ const Trending = () => {
     </div>
   );
 };
-
 export default Trending;

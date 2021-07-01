@@ -36,7 +36,7 @@ const SingleContent = ({
         className="cart-btn"
         // onClick={() => addProductToCart(data)}
       />
-      <FavoriteIcon className="cart-btn1" />
+      <FavoriteIcon className="heart-btn" />
     </ContentModal>
   );
 };

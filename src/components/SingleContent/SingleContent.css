@@ -9,7 +9,7 @@
   position: relative;
   font-family: "Montserrat", sans-serif;
   color: white;
-  /* transition: all 0.1s linear; */
+
   box-shadow: 0 6px 20px rgba(19, 101, 255, 0.17);
 }
 
@@ -50,7 +50,7 @@
   top: 360px;
   cursor: pointer;
 }
-.cart-btn1 {
+.heart-btn {
   color: white;
   position: absolute;
   right: 50px;
@@ -61,7 +61,22 @@
   color: blue;
   transform: scale(1.1);
 }
-.cart-btn1:hover {
+.heart-btn:hover {
   color: red;
   transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+  .cart-btn {
+    position: absolute;
+    right: 10px;
+    top: 300px;
+    cursor: pointer;
+  }
+  .heart-btn {
+    position: absolute;
+    right: 40px;
+    top: 300px;
+    cursor: pointer;
+  }
 }

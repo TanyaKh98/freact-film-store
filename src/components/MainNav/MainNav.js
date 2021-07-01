@@ -3,12 +3,15 @@ import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import FavoriteIcon from "@material-ui/icons/Favorite";
-import WhatshotIcon from "@material-ui/icons/Whatshot";
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+
+import MenuIcon from "../../components/MainNav/Button";
+import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
 import TvIcon from "@material-ui/icons/Tv";
 import MovieIcon from "@material-ui/icons/Movie";
 import { useHistory } from "react-router-dom";
+import AccountBoxIcon from "@material-ui/icons/AccountBox";
+import "../../components/MainNav/MainNav.css";
 
 const useStyles = makeStyles({
   root: {
@@ -37,7 +40,7 @@ export default function SimpleBottomNavigation() {
     } else if (value === 4) {
       history.push("/search");
     } else if (value === 5) {
-      history.push("/cart");
+      history.push("/login");
     }
   }, [value, history]);
 
@@ -52,9 +55,10 @@ export default function SimpleBottomNavigation() {
     >
       <BottomNavigationAction
         style={{ color: "white" }}
-        label="Trending"
-        icon={<WhatshotIcon />}
+        label="Home"
+        icon={<HomeIcon />}
       />
+
       <BottomNavigationAction
         style={{ color: "white" }}
         label="Movies"
@@ -66,19 +70,28 @@ export default function SimpleBottomNavigation() {
         icon={<TvIcon />}
       />
       <BottomNavigationAction
+        className="hide"
         style={{ color: "white" }}
         label="Favorite"
         icon={<FavoriteIcon />}
       />
       <BottomNavigationAction
+        className="hide"
         style={{ color: "white" }}
         label="Search"
         icon={<SearchIcon />}
       />
+
       <BottomNavigationAction
+        className="hide"
         style={{ color: "white" }}
-        label="Cart"
-        icon={<ShoppingCartIcon />}
+        label="Log in"
+        icon={<AccountBoxIcon />}
+      />
+      <BottomNavigationAction
+        className="appear"
+        style={{ color: "white" }}
+        icon={<MenuIcon />}
       />
     </BottomNavigation>
   );
