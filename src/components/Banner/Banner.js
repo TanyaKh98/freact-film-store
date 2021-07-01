@@ -45,18 +45,18 @@ const Banner = () => {
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="banner__buttons">
-          <button className="banner__button play">
+          {/* <button className="banner__button play">
             <PlayArrowIcon />
             Play
-          </button>
-          <button className="banner__button info">
+          </button> */}
+          {/* <button className="banner__button info">
             <InfoOutlinedIcon
               fontSize="small"
               paddingRight={20}
               marginRight={100}
             />
             <div className="space"></div> More Information
-          </button>
+          </button> */}
         </div>
         {/**DIV > 2 BUTTONS */}
 
